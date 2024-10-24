@@ -1,38 +1,69 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+.title {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-card, .fine-card {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fine-card {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-card h2, .fine-card h2 {
+  margin: 0;
+  color: #4CAF50;
 }
 
-.App-link {
-  color: #61dafb;
+.user-card p, .fine-card p {
+  color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
+
+.report-card {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  text-align: center;
+
+}
+
+.report-card h3 {
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+.report-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
